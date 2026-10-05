@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Second Hour Storefront</title>
+<meta name="description" content="Homepage redesign concept for Second Hour, the independent Melbourne watchmaker.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+
+<div id="top"></div>
+
+<div class="announce" role="region" aria-label="Announcement">
+  <p>Sign up for our mailing list for 10% off your first order</p>
+</div>
+
+<header class="header">
+  <div class="header__inner">
+    <div class="header__left">
+      <button class="icon-btn burger" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false" id="drawer-open">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--mega">
+            <a href="#collection" class="nav__link" aria-haspopup="true">Collections
+              <svg class="caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+            <div class="mega">
+              <div class="mega__inner">
+                <div>
+                  <p class="label mega__label">The collection</p>
+                  <ul class="mega__list">
+                    <li><a href="#collection"><span class="mega__name">Gin Clear</span><span class="mega__desc">The flagship dive watch</span></a></li>
+                    <li><a href="#collection"><span class="mega__name">Mandala</span><span class="mega__desc">A sports watch with a dial obsession</span></a></li>
+                    <li><a href="#collection"><span class="mega__name">The Beacon 2</span><span class="mega__desc">Maximum visibility after dark</span></a></li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="label mega__label" aria-hidden="true">&nbsp;</p>
+                  <ul class="mega__list">
+                    <li><a href="#collection"><span class="mega__name">Fusion</span><span class="mega__desc">Form and function, toughened to 1200 HV</span></a></li>
+                    <li><a href="#collection"><span class="mega__name">Memoir</span><span class="mega__desc">Art Deco, refined for the wrist</span></a></li>
+                    <li><a href="#collection" class="mega__all">View all watches <span aria-hidden="true">→</span></a></li>
+                  </ul>
+                </div>
+                <a href="#collection" class="mega__feature">
+                  <span class="mega__img"><img src="assets/ginclear.jpg" alt="Gin Clear dive watch with green dial resting on a green book"></span>
+                  <span class="mega__copy">
+                    <span class="label" style="color: var(--grey-on-light)">New</span>
+                    <span class="mega__name">The Gin Clear 3</span>
+                    <span class="mega__cta">Discover <span aria-hidden="true">→</span></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="stockists.html" class="nav__link">Stockists</a></li>
+          <li class="nav__item nav__item--drop">
+            <a href="#footer" class="nav__link" aria-haspopup="true">Support
+              <svg class="caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+            <ul class="drop">
+              <li><a href="#footer">FAQs</a></li>
+              <li><a href="#footer">User guide</a></li>
+              <li><a href="#footer">Warranty</a></li>
+              <li><a href="#footer">Shipping</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a href="index.html" class="logo" aria-label="Second Hour home">
+      <img src="assets/logo-dark.png" alt="Second Hour" width="159" height="70">
+    </a>
+
+    <div class="header__right">
+      <a href="#footer" class="nav__link journal">The Watch Journal</a>
+      <button class="icon-btn" type="button" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      </button>
+      <a href="#collection" class="icon-btn" aria-label="Bag, 4 items">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="bag__count" aria-hidden="true">4</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" data-close></div>
+  <div class="drawer__panel" role="dialog" aria-label="Menu">
+    <div class="drawer__top">
+      <span class="label">Menu</span>
+      <button class="icon-btn" type="button" aria-label="Close menu" data-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile">
+      <details class="acc">
+        <summary>Collections</summary>
+        <ul>
+          <li><a href="#collection" data-close>Gin Clear</a></li>
+          <li><a href="#collection" data-close>Mandala</a></li>
+          <li><a href="#collection" data-close>The Beacon 2</a></li>
+          <li><a href="#collection" data-close>Fusion</a></li>
+          <li><a href="#collection" data-close>Memoir</a></li>
+          <li><a href="#collection" data-close>View all watches →</a></li>
+        </ul>
+      </details>
+      <a class="drawer__link" href="about.html">About us</a>
+      <a class="drawer__link" href="stockists.html">Stockists</a>
+      <details class="acc">
+        <summary>Support</summary>
+        <ul>
+          <li><a href="#footer" data-close>FAQs</a></li>
+          <li><a href="#footer" data-close>User guide</a></li>
+          <li><a href="#footer" data-close>Warranty</a></li>
+          <li><a href="#footer" data-close>Shipping</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </details>
+      <a class="drawer__link" href="#footer" data-close>The Watch Journal</a>
+      <a class="drawer__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero" aria-label="The Gin Clear 3">
+    <figure class="hero__media">
+      <img src="assets/hero-gc3.jpg" alt="Gin Clear 3 dive watch with grey dial and steel bracelet, splashed with water among air bubbles">
+    </figure>
+    <div class="hero__copy">
+      <span class="label hero__eyebrow">Designed in Melbourne</span>
+      <h1>Where design<br>and quality<br>intersect</h1>
+      <hr class="hero__rule">
+      <p class="hero__product">The Gin Clear 3</p>
+      <div class="hero__ctas">
+        <a href="#collection" class="btn btn--light">Discover more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-label="Why Second Hour">
+    <div class="marquee__track">
+      <div class="marquee__item"><b>Designed in Melbourne</b><span>Independent Australian watchmaker</span></div>
+      <div class="marquee__item"><b>Swiss &amp; Japanese movements</b><span>Proven mechanical calibres</span></div>
+      <div class="marquee__item"><b>Regulated in house</b><span>Every watch checked before dispatch</span></div>
+      <div class="marquee__item"><b>24-month international warranty</b><span>Covered wherever you are</span></div>
+      <div class="marquee__item" aria-hidden="true"><b>Designed in Melbourne</b><span>Independent Australian watchmaker</span></div>
+      <div class="marquee__item" aria-hidden="true"><b>Swiss &amp; Japanese movements</b><span>Proven mechanical calibres</span></div>
+      <div class="marquee__item" aria-hidden="true"><b>Regulated in house</b><span>Every watch checked before dispatch</span></div>
+      <div class="marquee__item" aria-hidden="true"><b>24-month international warranty</b><span>Covered wherever you are</span></div>
+    </div>
+  </section>
+
+  <section class="press" aria-labelledby="press-title">
+    <div class="wrap">
+      <div class="press__head">
+        <span class="label">Featured in</span>
+        <h2 id="press-title">Recognised by the watch community</h2>
+      </div>
+      <div class="press__grid">
+        <a href="#press-title" class="press__item"><img src="assets/press-hodinkee.png" alt="Hodinkee" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img src="assets/press-oracletime.png" alt="Oracle Time" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img src="assets/press-fratello.png" alt="Fratello" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img src="assets/press-wornwound.png" alt="Worn &amp; Wound" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img src="assets/press-monochrome.png" alt="Monochrome" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img class="tall" src="assets/press-timetide.png" alt="Time+Tide" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection" aria-labelledby="col-title">
+    <div class="wrap">
+      <h2 class="collection__title" id="col-title">Our collection</h2>
+      <div class="col-track" id="col-track" tabindex="0" aria-label="Collections, scroll sideways">
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-fusion.jpg" alt="Fusion with turquoise dial" loading="lazy"></div><span class="col-card__name">Fusion <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-gin.jpg" alt="Gin Clear dive watch on the wrist" loading="lazy"></div><span class="col-card__name">Gin Clear <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-beacon.jpg" alt="Beacon 2 field watch on the wrist" loading="lazy"></div><span class="col-card__name">The Beacon 2 <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-mandala.jpg" alt="Mandala with green guilloché dial on the wrist" loading="lazy"></div><span class="col-card__name">Mandala <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/memoir.jpg" alt="Memoir rectangular watch on a grey leather strap" loading="lazy"></div><span class="col-card__name">Memoir <span aria-hidden="true">→</span></span></a>
+      </div>
+      <div class="col-nav">
+        <button type="button" id="col-prev" aria-label="Previous collections">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+        </button>
+        <button type="button" id="col-next" aria-label="More collections">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="rv-title">
+    <figure class="reviews__media" aria-hidden="true">
+      <!-- Swap for the 10-second clip: <video src="assets/reviews-bg.mp4" autoplay muted loop playsinline poster="assets/reviews-bg.jpg"></video> -->
+      <img src="assets/reviews-bg.jpg" alt="">
+    </figure>
+    <div class="wrap">
+      <div class="reviews__head">
+        <span class="label">From our owners</span>
+        <h2 id="rv-title">In their own words</h2>
+        <p class="reviews__verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg>All reviews are from verified website purchases</p>
+      </div>
+      <div class="rv-stage" id="rv-stage" aria-roledescription="carousel" aria-label="Customer reviews">
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 1 of 4">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>Fell in love with this watch from the first time I saw it online. Ordered it and received it quickly. The watch wears great and the strap is better than any I have ever seen before. This is my second watch from this company. Felt great supporting an independent brand who really cares about their product and customer.</blockquote>
+          <figcaption>Jose S</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 2 of 4">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>Absolutely spectacular! I love the bracelet. It's nice to get away from a 3-link, oyster-style bracelet. The watch looks great as is or with a black or red/black strap. It's just beautiful without being pretentious.</blockquote>
+          <figcaption>Steven K</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 3 of 4">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>Thorough &amp; transparent process. The Gin Clear is immaculate, integral and precise. As the ETA was ticking out of the box, I have not wound it; my only amendment was a leather strap. Thank you.</blockquote>
+          <figcaption>James O</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 4 of 4">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>Marvelous product, way better than pictures from the website when you hold it in your hand. Very friendly owners.</blockquote>
+          <figcaption>Anton-Mihail N</figcaption>
+        </figure>
+      </div>
+      <div class="rv-controls">
+        <button class="rv-arrow" type="button" id="rv-prev" aria-label="Previous review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="rv-dots" id="rv-dots"></div>
+        <button class="rv-arrow" type="button" id="rv-next" aria-label="Next review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" aria-labelledby="nl-title">
+    <div class="newsletter__inner">
+      <h2 id="nl-title">For those who know</h2>
+      <p>Sign up with your email address and get 10% off your first order.</p>
+      <form class="nl-form" id="nl-form" novalidate>
+        <label for="nl-email" class="vh">Email address</label>
+        <input id="nl-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
+        <button type="submit" class="btn btn--light">Subscribe</button>
+      </form>
+      <p class="nl-note" id="nl-note">New releases and stories from the workshop. Unsubscribe anytime.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo-white.png" alt="Second Hour" width="277" height="44">
+        <p class="label footer__tagline">Independent watchmaker.<br>Designed in Melbourne.</p>
+        <address class="footer__contact">
+          Whitty Street, Sunshine<br>
+          Victoria, Australia 3020<br>
+          <span>info@secondhour.com.au</span>
+        </address>
+      </div>
+
+      <div class="footer__menus">
+        <div>
+          <h2 class="label footer__heading">Quick links</h2>
+          <ul class="footer__links">
+            <li><a href="#collection">Watches</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="stockists.html">Stockists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label footer__heading">Information</h2>
+          <ul class="footer__links">
+            <li><a href="#top">FAQs</a></li>
+            <li><a href="#top">User guide</a></li>
+            <li><a href="#top">In the press</a></li>
+            <li><a href="#top">Archive</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label footer__heading">Policies</h2>
+          <ul class="footer__links">
+            <li><a href="#top">Warranty</a></li>
+            <li><a href="#top">Shipping</a></li>
+            <li><a href="#top">Refunds</a></li>
+            <li><a href="#top">Privacy</a></li>
+            <li><a href="#top">Terms of service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label footer__heading">Follow us</h2>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/secondhourwatches/" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a></li>
+            <li><a href="https://www.facebook.com/SecondHourWatch" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21h2.9Z"/></svg>
+            </a></li>
+            <li><a href="https://www.youtube.com/@SecondHourWatches" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>
+            </a></li>
+          </ul>
+          <a class="group" href="https://www.facebook.com/groups/901599277070121">
+            <b>Owners' group</b>
+            <span>Wrist shots, questions and first looks from the Second Hour community.</span>
+            <em>Join on Facebook <span aria-hidden="true" style="color: inherit">→</span></em>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span>© 2026 Second Hour Watches</span>
+        <span aria-hidden="true">·</span>
+        <span>ABN 56 637 718 784</span>
+      </div>
+      <ul class="pay" aria-label="Accepted payment methods">
+        <li><img src="assets/pay-amex.png" alt="American Express" width="38" height="24"></li>
+        <li><img src="assets/pay-applepay.png" alt="Apple Pay" width="36" height="24"></li>
+        <li><img src="assets/pay-bancontact.png" alt="Bancontact" width="36" height="22"></li>
+        <li><img src="assets/pay-googlepay.png" alt="Google Pay" width="36" height="22"></li>
+        <li><img src="assets/pay-mastercard.png" alt="Mastercard" width="38" height="24"></li>
+        <li><img src="assets/pay-mbway.png" alt="MB WAY" width="36" height="22"></li>
+        <li><img src="assets/pay-paypal.png" alt="PayPal" width="36" height="22"></li>
+        <li><img src="assets/pay-shoppay.png" alt="Shop Pay" width="38" height="24"></li>
+        <li><img src="assets/pay-unionpay.png" alt="UnionPay" width="38" height="24"></li>
+        <li><img src="assets/pay-visa.png" alt="Visa" width="38" height="24"></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating dock: hidden at the top of the page, fades in after scrolling -->
+<div class="dock" id="dock" aria-hidden="true">
+  <button class="totop" type="button" id="totop" aria-label="Back to top" tabindex="-1">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+  <div class="currency">
+    <div class="currency__menu" id="currency-menu" role="menu" aria-label="Currency" hidden>
+      <button type="button" role="menuitemradio" aria-checked="false" data-code="USD" data-flag="assets/flag-usd.png"><img src="assets/flag-usd.png" alt="">US Dollar (USD)</button>
+      <button type="button" role="menuitemradio" aria-checked="false" data-code="GBP" data-flag="assets/flag-gbp.png"><img src="assets/flag-gbp.png" alt="">British Pound (GBP)</button>
+      <button type="button" role="menuitemradio" aria-checked="false" data-code="EUR" data-flag="assets/flag-eur.png"><img src="assets/flag-eur.png" alt="">Euro (EUR)</button>
+      <button type="button" role="menuitemradio" aria-checked="false" data-code="CAD" data-flag="assets/flag-cad.png"><img src="assets/flag-cad.png" alt="">Canadian Dollar (CAD)</button>
+      <button type="button" role="menuitemradio" aria-checked="true" data-code="AUD" data-flag="assets/flag-aud.png"><img src="assets/flag-aud.png" alt="">Australian Dollar (AUD)</button>
+    </div>
+    <button class="currency__btn" type="button" id="currency-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="currency-menu" tabindex="-1">
+      <img id="currency-flag" src="assets/flag-aud.png" alt="">
+      <span id="currency-code">AUD</span>
+      <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 6.5 5 3.5 8 6.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      <span class="vh">Change currency</span>
+    </button>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
