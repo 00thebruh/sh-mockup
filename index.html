@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css?v=202610061347">
 </head>
 <body>
 
@@ -68,8 +68,8 @@
               <svg class="caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
             </a>
             <ul class="drop">
-              <li><a href="#footer">Warranty</a></li>
-              <li><a href="#footer">Shipping</a></li>
+              <li><a href="shipping-policy.html#sp-warranty">Warranty</a></li>
+              <li><a href="shipping-policy.html">Shipping</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </li>
@@ -120,8 +120,8 @@
       <details class="acc">
         <summary>Support</summary>
         <ul>
-          <li><a href="#footer" data-close>Warranty</a></li>
-          <li><a href="#footer" data-close>Shipping</a></li>
+          <li><a href="shipping-policy.html#sp-warranty">Warranty</a></li>
+          <li><a href="shipping-policy.html">Shipping</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </details>
@@ -134,9 +134,7 @@
 <main>
   <section class="hero" aria-label="The Mandala Mk3">
     <figure class="hero__media">
-      <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
-        <source src="assets/hero-mobile.mp4" type="video/mp4" media="(max-width: 900px)">
-        <source src="assets/hero-tablet.mp4" type="video/mp4" media="(max-width: 1024px)">
+      <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true" data-src-mobile="assets/hero-portrait.mp4" data-src-tablet="assets/hero-tablet.mp4" data-src-desktop="assets/hero.mp4" data-poster-mobile="assets/hero-poster-mobile.jpg">
         <source src="assets/hero.mp4" type="video/mp4">
       </video>
     </figure>
@@ -338,7 +336,7 @@
     <div class="footer__top">
       <div class="footer__brand">
         <img src="assets/logo-white.png" alt="Second Hour" width="277" height="44">
-        <p class="label footer__tagline">Independent watchmaker.<br>Designed in Melbourne.</p>
+        <p class="label footer__tagline">Where design<br>and quality intersect</p>
         <address class="footer__contact">
           Whitty Street, Sunshine<br>
           Victoria, Australia 3020<br>
@@ -359,11 +357,11 @@
         <div>
           <h2 class="label footer__heading">Policies</h2>
           <ul class="footer__links">
-            <li><a href="#top">Warranty</a></li>
-            <li><a href="#top">Shipping</a></li>
-            <li><a href="#top">Refunds</a></li>
-            <li><a href="#top">Privacy</a></li>
-            <li><a href="#top">Terms of service</a></li>
+            <li><a href="shipping-policy.html#sp-warranty">Warranty</a></li>
+            <li><a href="shipping-policy.html">Shipping</a></li>
+            <li><a href="refund-policy.html">Refunds</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms-of-service.html">Terms of service</a></li>
           </ul>
         </div>
         <div>
@@ -435,6 +433,6 @@
   </div>
 </div>
 
-<script src="assets/site.js"></script>
+<script src="assets/site.js?v=202610061347"></script>
 </body>
 </html>

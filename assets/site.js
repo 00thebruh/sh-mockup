@@ -51,6 +51,54 @@
     if (e.key === 'Escape') { if (!menu.hidden) { closeMenu(); curBtn.focus(); } setDrawer(false); }
   });
 
+  /* Hero video: hold on the first frame for visitors who prefer reduced motion */
+  (function () {
+    var v = document.getElementById('hero-video');
+    if (!v) return;
+    /* Pick the right video for the screen: portrait on phones, tablet cut, desktop cut */
+    var mobile = window.matchMedia('(max-width: 900px)').matches;
+    var tablet = !mobile && window.matchMedia('(max-width: 1024px)').matches;
+    var want = mobile ? v.dataset.srcMobile : (tablet ? v.dataset.srcTablet : v.dataset.srcDesktop);
+    if (mobile && v.dataset.posterMobile) v.poster = v.dataset.posterMobile;
+    if (want && v.currentSrc.indexOf(want) === -1) {
+      v.src = want; v.load();
+      var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { document.querySelectorAll('video[autoplay]').forEach(function (x) { x.removeAttribute('autoplay'); x.pause(); }); }
+  })();
+
+  /* Newsletter: collapsible on phones */
+  (function () {
+    var t = document.getElementById('nl-toggle');
+    if (!t) return;
+    var sec = t.closest('.newsletter');
+    t.addEventListener('click', function () {
+      var open = !sec.classList.contains('is-open');
+      sec.classList.toggle('is-open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) { var i = document.getElementById('nl-email'); if (i) setTimeout(function () { i.focus({ preventScroll: true }); }, 50); }
+    });
+  })();
+
+  /* Terms of service: expand / collapse all */
+  (function () {
+    var btn = document.getElementById('ts-toggle-all');
+    if (!btn) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll('.ts-item'));
+    function sync() {
+      var allOpen = items.every(function (d) { return d.open; });
+      btn.textContent = allOpen ? 'Collapse all' : 'Expand all';
+      btn.setAttribute('aria-pressed', allOpen ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function () {
+      var open = !items.every(function (d) { return d.open; });
+      items.forEach(function (d) { d.open = open; });
+      sync();
+    });
+    items.forEach(function (d) { d.addEventListener('toggle', sync); });
+    if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t && t.tagName === 'DETAILS') t.open = true; }
+  })();
+
   /* Collection carousel */
   (function () {
     var track = document.getElementById('col-track');
@@ -94,6 +142,11 @@
         c.classList.toggle('is-active', o === 0);
         c.classList.toggle('is-near', Math.abs(o) === 1);
         c.setAttribute('aria-hidden', o === 0 ? 'false' : 'true');
+        if (o !== 0 && c.classList.contains('is-expanded')) {
+          c.classList.remove('is-expanded');
+          var mb = c.querySelector('.rv-more');
+          if (mb) { mb.setAttribute('aria-expanded', 'false'); mb.textContent = 'Read more'; }
+        }
       });
       dots.forEach(function (d, i) { d.setAttribute('aria-current', i === current ? 'true' : 'false'); });
     }
@@ -102,6 +155,17 @@
     document.getElementById('rv-prev').addEventListener('click', function () { go(current - 1); restart(); });
     document.getElementById('rv-next').addEventListener('click', function () { go(current + 1); restart(); });
     cards.forEach(function (c, i) { c.addEventListener('click', function () { if (i !== current) { go(i); restart(); } }); });
+    stage.querySelectorAll('.rv-more').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var card = b.closest('.rv-card');
+        var open = !card.classList.contains('is-expanded');
+        card.classList.toggle('is-expanded', open);
+        b.setAttribute('aria-expanded', open ? 'true' : 'false');
+        b.textContent = open ? 'Show less' : 'Read more';
+        clearInterval(timer);
+      });
+    });
     var section = stage.closest('.reviews');
     section.addEventListener('mouseenter', function () { clearInterval(timer); });
     section.addEventListener('mouseleave', restart);
