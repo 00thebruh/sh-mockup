@@ -68,8 +68,6 @@
               <svg class="caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
             </a>
             <ul class="drop">
-              <li><a href="#footer">FAQs</a></li>
-              <li><a href="#footer">User guide</a></li>
               <li><a href="#footer">Warranty</a></li>
               <li><a href="#footer">Shipping</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -122,8 +120,6 @@
       <details class="acc">
         <summary>Support</summary>
         <ul>
-          <li><a href="#footer" data-close>FAQs</a></li>
-          <li><a href="#footer" data-close>User guide</a></li>
           <li><a href="#footer" data-close>Warranty</a></li>
           <li><a href="#footer" data-close>Shipping</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -136,15 +132,19 @@
 </div>
 
 <main>
-  <section class="hero" aria-label="The Gin Clear 3">
+  <section class="hero" aria-label="The Mandala Mk3">
     <figure class="hero__media">
-      <img src="assets/hero-gc3.jpg" alt="Gin Clear 3 dive watch with grey dial and steel bracelet, splashed with water among air bubbles">
+      <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
+        <source src="assets/hero-mobile.mp4" type="video/mp4" media="(max-width: 900px)">
+        <source src="assets/hero-tablet.mp4" type="video/mp4" media="(max-width: 1024px)">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
     </figure>
     <div class="hero__copy">
       <span class="label hero__eyebrow">Designed in Melbourne</span>
       <h1>Where design<br>and quality<br>intersect</h1>
       <hr class="hero__rule">
-      <p class="hero__product">The Gin Clear 3</p>
+      <p class="hero__product">The Mandala Mk3</p>
       <div class="hero__ctas">
         <a href="#collection" class="btn btn--light">Discover more</a>
       </div>
@@ -164,6 +164,20 @@
     </div>
   </section>
 
+  <section class="story" aria-labelledby="story-title">
+    <div class="wrap story__inner">
+      <div class="story__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/story-poster.jpg" aria-label="Mandala Mk3 watches in different dial colours worn on the wrist">
+          <source src="assets/story.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="story__copy">
+        <h2 id="story-title">Stunning design, unstoppable class. Where craft meets performance</h2>
+        <a href="about.html" class="btn btn--dark">Read our story</a>
+      </div>
+    </div>
+  </section>
+
   <section class="press" aria-labelledby="press-title">
     <div class="wrap">
       <div class="press__head">
@@ -176,7 +190,7 @@
         <a href="#press-title" class="press__item"><img src="assets/press-fratello.png" alt="Fratello" loading="lazy"></a>
         <a href="#press-title" class="press__item"><img src="assets/press-wornwound.png" alt="Worn &amp; Wound" loading="lazy"></a>
         <a href="#press-title" class="press__item"><img src="assets/press-monochrome.png" alt="Monochrome" loading="lazy"></a>
-        <a href="#press-title" class="press__item"><img class="tall" src="assets/press-timetide.png" alt="Time+Tide" loading="lazy"></a>
+        <a href="#press-title" class="press__item"><img src="assets/press-timetide.png" alt="Time+Tide" loading="lazy"></a>
       </div>
     </div>
   </section>
@@ -185,11 +199,11 @@
     <div class="wrap">
       <h2 class="collection__title" id="col-title">Our collection</h2>
       <div class="col-track" id="col-track" tabindex="0" aria-label="Collections, scroll sideways">
-        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-fusion.jpg" alt="Fusion with turquoise dial" loading="lazy"></div><span class="col-card__name">Fusion <span aria-hidden="true">→</span></span></a>
-        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-gin.jpg" alt="Gin Clear dive watch on the wrist" loading="lazy"></div><span class="col-card__name">Gin Clear <span aria-hidden="true">→</span></span></a>
-        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-beacon.jpg" alt="Beacon 2 field watch on the wrist" loading="lazy"></div><span class="col-card__name">The Beacon 2 <span aria-hidden="true">→</span></span></a>
-        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/c-mandala.jpg" alt="Mandala with green guilloché dial on the wrist" loading="lazy"></div><span class="col-card__name">Mandala <span aria-hidden="true">→</span></span></a>
-        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/memoir.jpg" alt="Memoir rectangular watch on a grey leather strap" loading="lazy"></div><span class="col-card__name">Memoir <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/col-fusion.jpg" alt="Fusion with teal sunburst dial on a steel bracelet, beside a coiled rope" loading="lazy"></div><span class="col-card__name">Fusion <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/col-ginclear.jpg" alt="Gin Clear dive watch with grey dial, splashed with water" loading="lazy"></div><span class="col-card__name">Gin Clear <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/col-beacon.jpg" alt="Beacon 2 field watch with white dial and black bracelet on a desk" loading="lazy"></div><span class="col-card__name">The Beacon 2 <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/col-mandala.jpg" alt="Mandala with mint guilloché dial resting on a green book" loading="lazy"></div><span class="col-card__name">Mandala <span aria-hidden="true">→</span></span></a>
+        <a href="#collection" class="col-card"><div class="col-card__img"><img src="assets/col-memoir.jpg" alt="Memoir rectangular watch with pale blue dial on a grey leather strap, on the wrist" loading="lazy"></div><span class="col-card__name">Memoir <span aria-hidden="true">→</span></span></a>
       </div>
       <div class="col-nav">
         <button type="button" id="col-prev" aria-label="Previous collections">
@@ -198,6 +212,20 @@
         <button type="button" id="col-next" aria-label="More collections">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
         </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="feature-title">
+    <div class="feature__grid">
+      <div class="feature__media">
+        <img src="assets/ginclear-feature.jpg" alt="Gin Clear Mk3 with green dial and bezel on a steel bracelet, resting on a green book" loading="lazy">
+        <img class="feature__fade" src="assets/ginclear-feature-2.jpg" alt="Gin Clear Mk3 with green dial and bezel against a glowing green backdrop" loading="lazy">
+      </div>
+      <div class="feature__copy">
+        <h2 id="feature-title">We just made the best diver even better</h2>
+        <p>The Gin Clear Mk3 is the third evolution of Second Hour’s flagship dive watch. Inspired by genuine professional diving experience and engineered for premium performance, the Mk3 delivers exceptional durability, luxury finishing, and outstanding performance. Built for both adventure and everyday wear, it is a standout offering in the crowded modern dive watch genre.</p>
+        <a href="#collection" class="btn btn--dark">Dive into the Gin Clear</a>
       </div>
     </div>
   </section>
@@ -214,25 +242,61 @@
         <p class="reviews__verified"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg>All reviews are from verified website purchases</p>
       </div>
       <div class="rv-stage" id="rv-stage" aria-roledescription="carousel" aria-label="Customer reviews">
-        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 1 of 4">
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 1 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>I ordered my Dark Rhodium and received it here in Qatar in a week - fast, efficient, and easy. The watch is great! Good looks, subtle but significant improvements over the Mk2, superb regulation, and offers everything you want in a diver. Peter and Akira are committed to customer satisfaction and offering great watches at fair prices. This is my 4th Second Hour watch and I'm very happy with all of them, no equivocation or regrets at all. Highly recommend this watch - and all of their models; superb quality, performance, looks, and service for reasonable money.</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
+          <figcaption>Thomas M</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 2 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>The Mandala MK3 arrived promptly and it exceeds my expectations. This one is the silver blue dial and it is simply stunning. I also have the Mandala in the black dial and they are both incredible watches especially considering the cost. I have several other watches that cost much more and I would compare these two Second Hour watches very favorably. They are the perfect size for my 6.75 inch wrist and they are extremely comfortable to wear. Fantastic watches!!!!</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
+          <figcaption>William A</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 3 of 10">
           <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
           <blockquote>Fell in love with this watch from the first time I saw it online. Ordered it and received it quickly. The watch wears great and the strap is better than any I have ever seen before. This is my second watch from this company. Felt great supporting an independent brand who really cares about their product and customer.</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
           <figcaption>Jose S</figcaption>
         </figure>
-        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 2 of 4">
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 4 of 10">
           <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
           <blockquote>Absolutely spectacular! I love the bracelet. It's nice to get away from a 3-link, oyster-style bracelet. The watch looks great as is or with a black or red/black strap. It's just beautiful without being pretentious.</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
           <figcaption>Steven K</figcaption>
         </figure>
-        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 3 of 4">
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 5 of 10">
           <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
           <blockquote>Thorough &amp; transparent process. The Gin Clear is immaculate, integral and precise. As the ETA was ticking out of the box, I have not wound it; my only amendment was a leather strap. Thank you.</blockquote>
           <figcaption>James O</figcaption>
         </figure>
-        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 4 of 4">
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 6 of 10">
           <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
           <blockquote>Marvelous product, way better than pictures from the website when you hold it in your hand. Very friendly owners.</blockquote>
           <figcaption>Anton-Mihail N</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 7 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>The Memoir surprised me with how much quality is embedded. The case, the design, the accuracy of its timekeeping, even the strap... It's a grand piece that belies the cost. I doubt I've another watch in my collection that punches so far above its weight.</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
+          <figcaption>Nick R</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 8 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>From start to finish, Second Hour was GREAT. Easy to order, fulfilled right away and shipped without a problem. Upon arrival the watch was more than expected. Excellent feel which exuded quality and a real eye catcher without the bling and crazy crap I see on watches today. If you want a clean, attractive time piece at a very reasonable price, this is the one for you.</blockquote>
+          <button class="rv-more" type="button" aria-expanded="false">Read more</button>
+          <figcaption>Eric C</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 9 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>Excellent watch with very high quality and attention to detail. Sleek, refined and understated. Ordering and delivery were very clearly managed and well-handled by Second Hour.</blockquote>
+          <figcaption>Jesse R</figcaption>
+        </figure>
+        <figure class="rv-card" aria-roledescription="slide" aria-label="Review 10 of 10">
+          <span class="rv-stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg></span>
+          <blockquote>I love my new watch! The watch looks even better on the wrist than it does in the pictures! Second Hour, you're gonna get more of my business! Thank you, Kevin</blockquote>
+          <figcaption>Kevin B</figcaption>
         </figure>
       </div>
       <div class="rv-controls">
@@ -249,14 +313,22 @@
 
   <section class="newsletter" aria-labelledby="nl-title">
     <div class="newsletter__inner">
-      <h2 id="nl-title">For those who know</h2>
-      <p>Sign up with your email address and get 10% off your first order.</p>
-      <form class="nl-form" id="nl-form" novalidate>
-        <label for="nl-email" class="vh">Email address</label>
-        <input id="nl-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
-        <button type="submit" class="btn btn--light">Subscribe</button>
-      </form>
-      <p class="nl-note" id="nl-note">New releases and stories from the workshop. Unsubscribe anytime.</p>
+      <h2 id="nl-title">
+        <span class="nl-title-text">For those who know</span>
+        <button class="nl-toggle" type="button" id="nl-toggle" aria-expanded="false" aria-controls="nl-body">
+          <span>For those who know</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="nl-body" id="nl-body">
+        <p>Sign up with your email address and get 10% off your first order.</p>
+        <form class="nl-form" id="nl-form" novalidate>
+          <label for="nl-email" class="vh">Email address</label>
+          <input id="nl-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
+          <button type="submit" class="btn btn--light">Subscribe</button>
+        </form>
+        <p class="nl-note" id="nl-note" role="status"></p>
+      </div>
     </div>
   </section>
 </main>
@@ -285,15 +357,6 @@
           </ul>
         </div>
         <div>
-          <h2 class="label footer__heading">Information</h2>
-          <ul class="footer__links">
-            <li><a href="#top">FAQs</a></li>
-            <li><a href="#top">User guide</a></li>
-            <li><a href="#top">In the press</a></li>
-            <li><a href="#top">Archive</a></li>
-          </ul>
-        </div>
-        <div>
           <h2 class="label footer__heading">Policies</h2>
           <ul class="footer__links">
             <li><a href="#top">Warranty</a></li>
@@ -314,6 +377,9 @@
             </a></li>
             <li><a href="https://www.youtube.com/@SecondHourWatches" aria-label="YouTube">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>
+            </a></li>
+            <li><a href="#tiktok" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.4 2.2 1.8 3.7 4 4v3.1c-1.5 0-2.9-.5-4-1.2v6.3a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.2a2.5 2.5 0 1 0 1.6 2.3V3h3.1Z"/></svg>
             </a></li>
           </ul>
           <a class="group" href="https://www.facebook.com/groups/901599277070121">
